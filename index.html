@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #10151c; /* Cor de fundo escura do StoryMap */
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden; /* Evita barras de scroll desnecessárias */
+        }
+        .container-geo {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .coluna-esq {
+            width: 30%;
+            text-align: right;
+            padding-right: 25px;
+            font-weight: bold;
+            color: #dddddd;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espaço entre os títulos */
+        }
+        .divisoria {
+            width: 2px;
+            background-color: #E35205; /* A tal linha Laranja */
+            border-radius: 2px;
+        }
+        .coluna-dir {
+            width: 70%;
+            padding-left: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espaço entre os textos */
+        }
+        a { color: #E35205; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container-geo">
+        <div class="coluna-esq">
+            <div>Corpo de texto</div>
+            <div>Citações</div>
+        </div>
+
+        <div class="divisoria"></div>
+
+        <div class="coluna-dir">
+            <div>
+                OpenAI. (2024). Texto gerado por inteligência artificial com ChatGPT. Disponível em [ChatGPT]
+            </div>
+            <div>
+                Queirós, E. (1896). Carta ao Conde de Arnoso, 25 de Julho. In: Matos, A. (2015). Dicionário de Eça de Queiroz, p.154. <br>
+                Lisboa: Imprensa Nacional-Casa da Moeda
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
