@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referencias</title>
+    <title>Créditos</title>
     <style>
         body {
             margin: 0;
             padding: 20px;
-            background-color: #10151c; /* Cor de fundo escura do StoryMap */
+            /* AQUI ESTÁ O PRETO PURO QUE PEDIU */
+            background-color: #000000; 
             font-family: Arial, sans-serif;
             color: #ffffff;
-            overflow: hidden; /* Evita barras de scroll desnecessárias */
+            overflow-y: hidden; /* Esconde barras de rolagem */
         }
         .container-geo {
             display: flex;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            font-size: 16px;
-            line-height: 1.5;
+            font-size: 15px;
+            line-height: 1.6;
         }
+        /* Coluna da Esquerda (Títulos) */
         .coluna-esq {
-            width: 30%;
+            width: 25%;
             text-align: right;
             padding-right: 25px;
             font-weight: bold;
-            color: #dddddd;
+            color: #cccccc; /* Cinza claro para os títulos */
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Espaço entre os títulos */
+            gap: 30px; /* Espaço vertical entre os blocos */
+            text-transform: uppercase; /* Letras maiúsculas */
         }
+        /* A Linha Laranja */
         .divisoria {
             width: 2px;
-            background-color: #E35205; /* A tal linha Laranja */
-            border-radius: 2px;
+            background-color: #E35205; 
+            flex-shrink: 0;
         }
+        /* Coluna da Direita (Conteúdo) */
         .coluna-dir {
-            width: 70%;
+            width: 75%;
             padding-left: 25px;
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Espaço entre os textos */
+            gap: 30px; /* Tem de ser igual ao gap da esquerda para alinhar */
         }
-        a { color: #E35205; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <div class="container-geo">
         <div class="coluna-esq">
-            <div>Corpo de texto</div>
-            <div>Citações</div>
+            <div>Fotografia</div>
+            <div>Vídeo</div>
+            <div>Textos</div>
         </div>
 
         <div class="divisoria"></div>
 
         <div class="coluna-dir">
             <div>
-                OpenAI. (2024). Texto gerado por inteligência artificial com ChatGPT. Disponível em [ChatGPT]
+                José Luís Ávila Silveira/Pedro Noronha e Costa; Observatório do Mar dos Açores; Secretaria Regional do Ambiente e Ação Climática; Carlos Duarte; Peter Museu; Helder Afonso; Amigos do Farol dos Capelinhos; AvistaVulcão - Casa da Missão; Azores UNESCO Global Geopark.
             </div>
             <div>
-                Queirós, E. (1896). Carta ao Conde de Arnoso, 25 de Julho. In: Matos, A. (2015). Dicionário de Eça de Queiroz, p.154. <br>
-                Lisboa: Imprensa Nacional-Casa da Moeda
+                Arquivo RTP; Gonçalo Tocha.
+            </div>
+            <div>
+                Graça Ventura Moniz e Almeida; Judite Canha Fernandes.
             </div>
         </div>
     </div>
