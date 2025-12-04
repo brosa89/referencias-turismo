@@ -18,19 +18,19 @@
         /* CABEÇALHO CENTRADO */
         .cabecalho {
             text-align: center;
-            margin-bottom: 40px;
-            max-width: 900px;
+            margin-bottom: 50px;
+            max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .titulo-principal {
-            font-size: 24px; /* Maior destaque para o GeoLab */
+            font-size: 26px; 
             font-weight: bold;
             margin-bottom: 15px;
             color: #ffffff;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         .subtitulo-escola {
@@ -39,11 +39,11 @@
             font-weight: normal;
         }
 
-        /* TABELA CENTRADA */
+        /* TABELA CENTRADA COM EIXO NO MEIO */
         table {
             width: 100%;
-            max-width: 900px;
-            margin: 0 auto;   /* Centra a tabela */
+            max-width: 1000px; /* Largura total da área */
+            margin: 0 auto;   
             border-collapse: collapse;
         }
 
@@ -52,23 +52,24 @@
             padding-bottom: 25px;
         }
 
-        /* Coluna da Esquerda */
+        /* Coluna da Esquerda (Títulos) - AGORA COM 50% */
         .coluna-esq {
-            width: 20%;
-            text-align: right;
-            padding-right: 25px;
+            width: 50%; /* Ocupa metade da página */
+            text-align: right; /* Empurra o texto para junto da linha */
+            padding-right: 30px; /* Espaço entre texto e linha */
             font-weight: bold;
             color: #eeeeee;
-            border-right: 2px solid #E35205; /* Linha Laranja */
-            white-space: nowrap; 
+            border-right: 2px solid #E35205; /* A LINHA NO MEIO */
             text-transform: uppercase;
             font-size: 14px;
+            letter-spacing: 1px;
         }
 
-        /* Coluna da Direita */
+        /* Coluna da Direita (Conteúdo) - AGORA COM 50% */
         .coluna-dir {
-            width: 80%;
-            padding-left: 25px;
+            width: 50%; /* Ocupa a outra metade */
+            padding-left: 30px; /* Espaço entre linha e texto */
+            text-align: left;
             line-height: 1.6;
             font-size: 16px;
         }
