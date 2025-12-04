@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créditos</title>
     <style>
-        /* APLICAR TRANSPARÊNCIA TOTAL */
+        /* Fundo transparente para se fundir com o StoryMap */
         html, body {
             background-color: transparent !important;
             margin: 0;
             padding: 20px;
             font-family: Arial, sans-serif;
-            color: #ffffff; /* Texto branco */
+            color: #ffffff;
             overflow-y: hidden; 
         }
 
-        .container-geo {
-            display: flex;
+        /* Configuração da Tabela para alinhamento perfeito */
+        table {
+            width: 100%;
             max-width: 900px;
             margin: 0 auto;
-            font-size: 15px;
-            line-height: 1.6;
+            border-collapse: collapse; /* Une as bordas para a linha ser contínua */
+        }
+
+        /* Células da tabela */
+        td {
+            vertical-align: top; /* Garante que o texto começa sempre no topo */
+            padding-bottom: 30px; /* Espaço entre cada bloco (Fotografia, Vídeo...) */
         }
 
         /* Coluna da Esquerda (Títulos) */
@@ -29,53 +35,49 @@
             text-align: right;
             padding-right: 25px;
             font-weight: bold;
-            color: #cccccc; 
-            display: flex;
-            flex-direction: column;
-            gap: 30px; 
-            text-transform: uppercase; 
-        }
-
-        /* A Linha Laranja */
-        .divisoria {
-            width: 2px;
-            background-color: #E35205; 
-            flex-shrink: 0;
+            color: #cccccc;
+            text-transform: uppercase;
+            border-right: 2px solid #E35205; /* A LINHA LARANJA */
         }
 
         /* Coluna da Direita (Conteúdo) */
         .coluna-dir {
             width: 75%;
             padding-left: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px; 
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* Remove o espaço extra no último item */
+        tr:last-child td {
+            padding-bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container-geo">
-        <div class="coluna-esq">
-            <div>Fotografia</div>
-            <div>Vídeo</div>
-            <div>Textos</div>
-        </div>
-
-        <div class="divisoria"></div>
-
-        <div class="coluna-dir">
-            <div>
+    <table>
+        <tr>
+            <td class="coluna-esq">Fotografia</td>
+            <td class="coluna-dir">
                 José Luís Ávila Silveira/Pedro Noronha e Costa; Observatório do Mar dos Açores; Secretaria Regional do Ambiente e Ação Climática; Carlos Duarte; Peter Museu; Helder Afonso; Amigos do Farol dos Capelinhos; AvistaVulcão - Casa da Missão; Azores UNESCO Global Geopark.
-            </div>
-            <div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="coluna-esq">Vídeo</td>
+            <td class="coluna-dir">
                 Arquivo RTP; Gonçalo Tocha.
-            </div>
-            <div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="coluna-esq">Textos</td>
+            <td class="coluna-dir">
                 Graça Ventura Moniz e Almeida; Judite Canha Fernandes.
-            </div>
-        </div>
-    </div>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
