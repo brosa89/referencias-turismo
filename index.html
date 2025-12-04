@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créditos</title>
     <style>
-        body {
+        /* APLICAR TRANSPARÊNCIA TOTAL */
+        html, body {
+            background-color: transparent !important;
             margin: 0;
             padding: 20px;
-            /* AQUI ESTÁ O PRETO PURO QUE PEDIU */
-            background-color: #000000; 
             font-family: Arial, sans-serif;
-            color: #ffffff;
-            overflow-y: hidden; /* Esconde barras de rolagem */
+            color: #ffffff; /* Texto branco */
+            overflow-y: hidden; 
         }
+
         .container-geo {
             display: flex;
             max-width: 900px;
@@ -21,31 +22,34 @@
             font-size: 15px;
             line-height: 1.6;
         }
+
         /* Coluna da Esquerda (Títulos) */
         .coluna-esq {
             width: 25%;
             text-align: right;
             padding-right: 25px;
             font-weight: bold;
-            color: #cccccc; /* Cinza claro para os títulos */
+            color: #cccccc; 
             display: flex;
             flex-direction: column;
-            gap: 30px; /* Espaço vertical entre os blocos */
-            text-transform: uppercase; /* Letras maiúsculas */
+            gap: 30px; 
+            text-transform: uppercase; 
         }
+
         /* A Linha Laranja */
         .divisoria {
             width: 2px;
             background-color: #E35205; 
             flex-shrink: 0;
         }
+
         /* Coluna da Direita (Conteúdo) */
         .coluna-dir {
             width: 75%;
             padding-left: 25px;
             display: flex;
             flex-direction: column;
-            gap: 30px; /* Tem de ser igual ao gap da esquerda para alinhar */
+            gap: 30px; 
         }
     </style>
 </head>
