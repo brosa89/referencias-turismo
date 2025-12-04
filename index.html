@@ -3,58 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Créditos</title>
+    <title>Créditos GeoLab</title>
     <style>
-        /* Fundo transparente */
+        /* Fundo transparente e Fonte com Serifa */
         html, body {
             background-color: transparent !important;
             margin: 0;
             padding: 20px;
-            font-family: Arial, sans-serif;
+            font-family: "Georgia", "Times New Roman", serif;
             color: #ffffff;
-            overflow-y: hidden; 
+            overflow-y: auto; 
         }
 
-        /* Configuração da Tabela */
+        /* CABEÇALHO CENTRADO */
+        .cabecalho {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .titulo-principal {
+            font-size: 24px; /* Maior destaque para o GeoLab */
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitulo-escola {
+            font-size: 16px;
+            color: #dddddd;
+            font-weight: normal;
+        }
+
+        /* TABELA CENTRADA */
         table {
             width: 100%;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 0 auto;   /* Centra a tabela */
             border-collapse: collapse;
         }
 
-        /* Células da tabela */
         td {
             vertical-align: top;
-            padding-bottom: 30px; 
+            padding-bottom: 25px;
         }
 
-        /* Coluna da Esquerda (Títulos) */
+        /* Coluna da Esquerda */
         .coluna-esq {
-            width: 25%;
+            width: 20%;
             text-align: right;
             padding-right: 25px;
             font-weight: bold;
-            color: #cccccc;
-            text-transform: uppercase;
+            color: #eeeeee;
             border-right: 2px solid #E35205; /* Linha Laranja */
+            white-space: nowrap; 
+            text-transform: uppercase;
+            font-size: 14px;
         }
 
-        /* Coluna da Direita (Conteúdo) */
+        /* Coluna da Direita */
         .coluna-dir {
-            width: 75%;
+            width: 80%;
             padding-left: 25px;
             line-height: 1.6;
-            font-size: 15px;
-        }
-
-        /* Remove espaço extra no último item */
-        tr:last-child td {
-            padding-bottom: 0;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
+
+    <div class="cabecalho">
+        <div class="titulo-principal">GeoLab Tourism</div>
+        <div class="subtitulo-escola">Escola Superior de Hotelaria e Turismo do Estoril</div>
+    </div>
 
     <table>
         <tr>
